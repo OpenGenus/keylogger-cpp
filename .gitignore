@@ -9,9 +9,10 @@
 
 ### Above combination will ignore all files without extension ###
 
-# Ignore files with extension `.class` & `.exe`
+# Ignore files with extension `.class`, `.csv` & `.exe`
 *.class
 *.exe
+*.csv
 
 # Ignore `bin` dir
 bin/
